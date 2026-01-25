@@ -14,25 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navegador de Gestiones TSR</title>
     <style>
-        /* Copyright Notice */
-        .copyright-notice {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background: rgba(0,0,0,0.8);
-            color: white;
-            padding: 8px 12px;
-            border-radius: 5px;
-            font-size: 11px;
-            z-index: 10000;
-        }
-
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'DIN', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #E4E4E4; min-height: 100vh; padding: 20px; }
         .container { max-width: 1200px; margin: 0 auto; }
         .header { background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 30px; margin-bottom: 30px; }
         .header-content { margin-bottom: 20px; display: flex; align-items: center; gap: 20px; }
-        .header-logo { width: 150px; height: auto; flex-shrink: 0; }
+        .header-content img { width: 40px; height: auto; flex-shrink: 0; }
         .header-text { flex: 1; }
         .header-content h1 { color: #E4002B; font-size: 32px; margin-bottom: 5px; }
         .header-content p { color: #666; font-size: 16px; }
@@ -81,8 +68,10 @@
                 text-align: center !important;
                 gap: 15px !important;
             }
-            .header-logo {
-                width: 100px !important;
+            .header-content img {
+                width: 35px !important;
+                height: auto !important;
+                margin: 0 auto;
             }
             .header-text {
                 width: 100%;
@@ -124,16 +113,10 @@
 </head>
 <body>
 
-    <!-- Copyright Notice -->
-    <div class="copyright-notice">
-        © 2025 MAPFRE - Todos los derechos reservados
-    </div>
-
-
     <div class="container">
         <div class="header">
             <div class="header-content">
-                <img src="mapfre-logo.png" alt="MAPFRE Logo" class="header-logo">
+                <img src="mapfre-isotipo.png" alt="Logo MAPFRE">
                 <div class="header-text">
                     <h1>Navegador de Gestiones TSR</h1>
                     <p>Te ayudamos a encontrar la ruta en tus tareas 😉</p>
