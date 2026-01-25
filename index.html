@@ -73,6 +73,21 @@
         .form-group textarea { width: 100%; padding: 8px; border: 2px solid #e0e0e0; border-radius: 5px; font-size: 14px; font-family: inherit; resize: vertical; }
         .form-group textarea:focus { outline: none; border-color: #E4002B; }
 
+
+        /* Responsive móvil - Header centrado */
+        @media (max-width: 480px) {
+            .header-content {
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 15px !important;
+            }
+            .header-logo {
+                width: 100px !important;
+            }
+            .header-text {
+                width: 100%;
+            }
+        }
         /* Responsive Styles */
         @media (max-width: 768px) {
             .container { padding: 15px; }
@@ -118,7 +133,7 @@
     <div class="container">
         <div class="header">
             <div class="header-content">
-                <img src="https://mapfrecorp.sharepoint.com/sites/GO365EECOMPUSGIBEES-AREAPROVEPATRI/Documentos%20compartidos/PLANTILLAS%20Y%20VISUALES/icon/Raúl/AF_MAPFRE_LOGOTYPE_VER%201_RGB_RED.png" alt="MAPFRE Logo" class="header-logo">
+                <img src="mapfre-logo.png" alt="MAPFRE Logo" class="header-logo">
                 <div class="header-text">
                     <h1>Navegador de Gestiones TSR</h1>
                     <p>Te ayudamos a encontrar la ruta en tus tareas 😉</p>
