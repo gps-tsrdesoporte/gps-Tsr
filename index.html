@@ -13,6 +13,18 @@
     <link rel="apple-touch-icon" href="icon-192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navegador de Gestiones TSR</title>
+    
+    <!-- ONESIGNAL PUSH NOTIFICATIONS -->
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(function(OneSignal) {
+        OneSignal.init({
+          appId: "9b213721-614e-4145-ba29-3520c4d21af3",
+        });
+      });
+    </script>
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'DIN', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #E4E4E4; min-height: 100vh; padding: 20px; }
