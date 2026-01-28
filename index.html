@@ -14,15 +14,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navegador de Gestiones TSR</title>
     
-     <!-- ONESIGNAL PUSH NOTIFICATIONS -->
+      <!-- ONESIGNAL PUSH NOTIFICATIONS -->
     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
     <script>
       window.OneSignalDeferred = window.OneSignalDeferred || [];
       OneSignalDeferred.push(async function(OneSignal) {
         await OneSignal.init({
           appId: "9b213721-614e-4145-ba29-3520c4d21af3",
-          serviceWorkerPath: "/gps-Tsr/OneSignalSDKWorker.js",
-          serviceWorkerParam: { scope: "/gps-Tsr/" },
+          serviceWorkerPath: "OneSignalSDKWorker.js",
+          serviceWorkerParam: { scope: "/" },
+          path: "https://gps-tsrdesoporte.github.io/gps-Tsr/",
           notifyButton: {
             enable: true,
           },
