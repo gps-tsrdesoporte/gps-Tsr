@@ -15,21 +15,16 @@
     <title>Navegador de Gestiones TSR</title>
     
       <!-- ONESIGNAL PUSH NOTIFICATIONS -->
-    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-    <script>
-      window.OneSignalDeferred = window.OneSignalDeferred || [];
-      OneSignalDeferred.push(async function(OneSignal) {
-        await OneSignal.init({
-          appId: "9b213721-614e-4145-ba29-3520c4d21af3",
-          serviceWorkerPath: "OneSignalSDKWorker.js",
-          serviceWorkerParam: { scope: "/" },
-          path: "https://gps-tsrdesoporte.github.io/gps-Tsr/",
-          notifyButton: {
-            enable: true,
-          },
-        });
-      });
-    </script>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "9b213721-614e-4145-ba29-3520c4d21af3",
+      path: "https://gps-tsrdesoporte.github.io/",
+    });
+  });
+</script>
     
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
